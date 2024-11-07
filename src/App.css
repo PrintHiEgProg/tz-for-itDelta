@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.gallery {
+  margin-left: 3%;
+  margin-right: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Распределяет пространство между элементами */
+}
+
+.photo-item {
+  width: calc(33.33% - 10px); /* 3 в ряд с отступами */
+  text-align: left; /* Центрируем текст под картинкой */
+  margin-bottom: -160px; /* Уменьшенный вертикальный отступ между рядами */
+}
+
+.profile-banner {
+  background-position: center;
+  display: flex;
+  width: 100%;
+  height: 30vh;
+  max-height: 192px;
+  background-image: url('https://s3-alpha-sig.figma.com/img/d64d/fdc5/8a289a08c6a45d1d984b440eeb710836?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kaeWh3eTIUzzIl~4EDhVsTx3DyP3ielC5BAqH6KzUJNoV8msOGqsJztIiFeZpmQQIvAbuh2g6mtkaGpk8~vmb9Tpu3iceZwuRS3Yd5lNz5RScSDkB7MhhaSSudjObijpj66MwwQXDZNFz~HJ7DkNVtnViSVjTF5N3ExwOLezE7CE~3TNHkuBAUygYFEjAjG03t45-JH~S24KPklE3jixX8F3PZxH6FzT8YM1oP0ksd1SCzaN9D3dIqazfCPfFpZlY1SSbBQ4SanG1kgL9hN5P4ZujlksRM00U3QhK6RROmgRWhzz7GYzEuCIPU8s9rZPH3dpKcObRXG5xeeogMWp0w__');
+  background-size: cover;
+}
+
+.profile-btn-box {
+  display: flex;
+  margin-left: 50%;
+}
+
+.profile-btn {
+  font-weight: 500;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+  border: 1px solid #D1D5DB;
+  color: #374151;
+  margin-right: 3%;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.message-btn {
+  width: 100px;
+}
+
+.call-btn {
+  width: 80px;
+}
+
+.profile-text-btn-box {
+  margin-top: 2%;
+  margin-left: 32%;
+  display: flex;
+}
+
+.profile-text {
+  margin-left: -2vw;
+  white-space: nowrap;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.profile-avatar {
+  box-shadow: 0px 0px 0px 4px #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 20%;
+  margin-top: 130px;
+  background-size: cover;
+  width: 128px;
+  height: 128px;
+  background-image: url('https://s3-alpha-sig.figma.com/img/5486/81d2/611ac2f8afaf2b0aaef4da3fa36f380d?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BjRJLTlM5A14qm0ajN5bkePjur83fp85n4kODPFVS5RQH8cIpF-AdqYpkV0BJbvsFe3N6NZAQwHx1ibzZRNjD1p278ky0PkjxTykrsjAuUNZYosDM2ZZKSQf1KaxaZZaw7hi-mAH5yacVbnP-E4Vm8Ys9TM6kpgIlPipWVrS4Awee0ENwtPqLeNVkTM21CbZD122slJ5-A3YO9ohZceNuZoY7LyKwYbgp8KeYs9zuXymlo1McNo9Sh8pKdjFTynOGF855Q9YbQszh0np-pHC~X46lmUHqKWTMMJum60KOv0Y-ghz1q5qiuPs7hgEB-EEKb7hIzlc7dCVNTFuI6CbpA__');
+}
+
+.profile-box {
+  margin-bottom: 10vh;
+}
+
+.photo-item .photo {
+  width: 100%; /* Картинка занимает 100% ширины родителя */ 
+}
+
+.centered-container {
+  top: 0;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 100% высоты видимой области */
+  width: 100vw; /* 100% ширины видимой области */
+}
+
+.modal-window {
+  width: 50vw;
+  /*Ширинаквадрата*/height: 98vh;
+  /*Высотаквадрата*/background-color: #ffffff;
+  /*Цветквадрата*/box-shadow: 0px 10px 10px -5px #0000000A;
+  box-shadow: 0px 20px 25px -5px #0000001A;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.photo-big-helper {
+  display: flex;
+  align-items: center;
+}
+
+.comment-text {
+  font-size: 14px;
+  margin-top: 3%;
+  font-weight: 500;
+  margin-left: 5%;
+}
+
+.comment-text-text {
+  color: #6B7280;
+  font-size: 14px;
+  margin-left: 5%;
+}
+
+.save-btn {
+  margin-top: 30px;
+  padding: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FFFFFF;
+  background-color: #4F46E5;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.comments-comment {
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 5%;
+  margin-top: 15px;
+}
+
+.comment-textarea {
+  margin-top: 10px;
+  border: 1px solid #D1D5DB;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 15vh;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.photo-big {
+  width: 50%;
+  border-radius: 24px;
+  margin-top: 2vh;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+}
+
+.photo {
+  border-radius: 8px;
+  width: 100%;
+  height: 50%;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+@media (max-width: 1024px) {
+  .profile-text {
+  margin-left: 4vw;
+  white-space: nowrap;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+  .profile-btn-box {
+  display: flex;
+  margin-left: 35%;
+  }
+
+  .photo-item {
+  width: calc(33.33% - 10px); /* 3 в ряд с отступами */
+  text-align: left; /* Центрируем текст под картинкой */
+  margin-bottom: -100px; /* Уменьшенный вертикальный отступ между рядами */
+}
+}
+
+@media (max-width: 768px) {
+  .photo {
+  border-radius: 8px;
+  width: 100%;
+  height: 55%;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+  .profile-text {
+  margin-left: 6vw;
+  white-space: nowrap;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+  .profile-btn-box {
+  display: flex;
+  margin-left: 20%;
+  }
+
+  .photo-item {
+  width: calc(33.33% - 10px); /* 3 в ряд с отступами */
+  text-align: left; /* Центрируем текст под картинкой */
+  margin-bottom: -70px; /* Уменьшенный вертикальный отступ между рядами */
+}
+
+}
+
+@media (max-width: 425px) {
+  .profile-btn-box {
+  display: flex;
+  margin-left: 0%;
+  }
+}
